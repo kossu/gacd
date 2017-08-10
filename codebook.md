@@ -1,107 +1,100 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# Codebook for data.txt
 
-\f0\fs24 \cf0 # Codebook for data.txt\
-\
-The original data set [can be found here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and the data is [originally from here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).\
-\
-In the original dataset `X_test.txt` and `X_training.txt` datasets were separate, here they have been combined into one dataset and both the activities (`y_test.txt`and `y_training.txt`) and subject numbers (`subject_test.txt`and `subject_train.txt`) have been added to this file.\
-\
-This file presents only part of the combined dataset with only variables `mean`and `std`included. Below is a list of variable names. \
-\
-* First is the subject number (1-30), \
-* second is the activity (walking, walking upstairs, walking downstairs, sitting, standing, laying), \
-* and the rest are the **means of these measurements for each subject - activity pair**. \
-\
- [1] "subject"      \
- [2] "activity"                          \
- [3] "tBodyAcc mean X"                   \
- [4] "tBodyAcc mean Y"                   \
- [5] "tBodyAcc mean Z"                   \
- [6] "tGravityAcc mean X"                \
- [7] "tGravityAcc mean Y"                \
- [8] "tGravityAcc mean Z"                \
- [9] "tBodyAccJerk mean X"               \
-[10] "tBodyAccJerk mean Y"               \
-[11] "tBodyAccJerk mean Z"               \
-[12] "tBodyGyro mean X"                  \
-[13] "tBodyGyro mean Y"                  \
-[14] "tBodyGyro mean Z"                  \
-[15] "tBodyGyroJerk mean X"              \
-[16] "tBodyGyroJerk mean Y"              \
-[17] "tBodyGyroJerk mean Z"              \
-[18] "tBodyAccMag mean"                  \
-[19] "tGravityAccMag mean"               \
-[20] "tBodyAccJerkMag mean"              \
-[21] "tBodyGyroMag mean"                 \
-[22] "tBodyGyroJerkMag mean"             \
-[23] "fBodyAcc mean X"                   \
-[24] "fBodyAcc mean Y"                   \
-[25] "fBodyAcc mean Z"                   \
-[26] "fBodyAcc meanFreq X"               \
-[27] "fBodyAcc meanFreq Y"               \
-[28] "fBodyAcc meanFreq Z"               \
-[29] "fBodyAccJerk mean X"               \
-[30] "fBodyAccJerk mean Y"               \
-[31] "fBodyAccJerk mean Z"               \
-[32] "fBodyAccJerk meanFreq X"           \
-[33] "fBodyAccJerk meanFreq Y"           \
-[34] "fBodyAccJerk meanFreq Z"           \
-[35] "fBodyGyro mean X"                  \
-[36] "fBodyGyro mean Y"                  \
-[37] "fBodyGyro mean Z"                  \
-[38] "fBodyGyro meanFreq X"              \
-[39] "fBodyGyro meanFreq Y"              \
-[40] "fBodyGyro meanFreq Z"              \
-[41] "fBodyAccMag mean"                  \
-[42] "fBodyAccMag meanFreq"              \
-[43] "fBodyBodyAccJerkMag mean"          \
-[44] "fBodyBodyAccJerkMag meanFreq"      \
-[45] "fBodyBodyGyroMag mean"             \
-[46] "fBodyBodyGyroMag meanFreq"         \
-[47] "fBodyBodyGyroJerkMag mean"         \
-[48] "fBodyBodyGyroJerkMag meanFreq"     \
-[49] "angletBodyAccMean gravity"         \
-[50] "angletBodyAccJerkMean gravityMean" \
-[51] "angletBodyGyroMean gravityMean"    \
-[52] "angletBodyGyroJerkMean gravityMean"\
-[53] "angleX gravityMean"                \
-[54] "angleY gravityMean"                \
-[55] "angleZ gravityMean"                \
-[56] "tBodyAcc std X"                    \
-[57] "tBodyAcc std Y"                    \
-[58] "tBodyAcc std Z"                    \
-[59] "tGravityAcc std X"                 \
-[60] "tGravityAcc std Y"                 \
-[61] "tGravityAcc std Z"                 \
-[62] "tBodyAccJerk std X"                \
-[63] "tBodyAccJerk std Y"                \
-[64] "tBodyAccJerk std Z"                \
-[65] "tBodyGyro std X"                   \
-[66] "tBodyGyro std Y"                   \
-[67] "tBodyGyro std Z"                   \
-[68] "tBodyGyroJerk std X"               \
-[69] "tBodyGyroJerk std Y"               \
-[70] "tBodyGyroJerk std Z"               \
-[71] "tBodyAccMag std"                   \
-[72] "tGravityAccMag std"                \
-[73] "tBodyAccJerkMag std"               \
-[74] "tBodyGyroMag std"                  \
-[75] "tBodyGyroJerkMag std"              \
-[76] "fBodyAcc std X"                    \
-[77] "fBodyAcc std Y"                    \
-[78] "fBodyAcc std Z"                    \
-[79] "fBodyAccJerk std X"                \
-[80] "fBodyAccJerk std Y"                \
-[81] "fBodyAccJerk std Z"                \
-[82] "fBodyGyro std X"                   \
-[83] "fBodyGyro std Y"                   \
-[84] "fBodyGyro std Z"                   \
-[85] "fBodyAccMag std"                   \
-[86] "fBodyBodyAccJerkMag std"           \
-[87] "fBodyBodyGyroMag std"              \
-[88] "fBodyBodyGyroJerkMag std"    }
+The original data set [can be found here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and the data is [originally from here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+
+In the original dataset `X_test.txt` and `X_training.txt` datasets were separate, here they have been combined into one dataset and both the activities (`y_test.txt`and `y_training.txt`) and subject numbers (`subject_test.txt`and `subject_train.txt`) have been added to this file.
+
+This file presents only part of the combined dataset with only variables `mean`and `std`included. Below is a list of variable names. 
+
+* First is the subject number (1-30), 
+* second is the activity (walking, walking upstairs, walking downstairs, sitting, standing, laying), 
+* and the rest are the **means of these measurements for each subject - activity pair**. 
+
+ [1] "subject"      
+ [2] "activity"                          
+ [3] "tBodyAcc mean X"                   
+ [4] "tBodyAcc mean Y"                   
+ [5] "tBodyAcc mean Z"                   
+ [6] "tGravityAcc mean X"                
+ [7] "tGravityAcc mean Y"                
+ [8] "tGravityAcc mean Z"                
+ [9] "tBodyAccJerk mean X"               
+[10] "tBodyAccJerk mean Y"               
+[11] "tBodyAccJerk mean Z"               
+[12] "tBodyGyro mean X"                  
+[13] "tBodyGyro mean Y"                  
+[14] "tBodyGyro mean Z"                  
+[15] "tBodyGyroJerk mean X"              
+[16] "tBodyGyroJerk mean Y"              
+[17] "tBodyGyroJerk mean Z"              
+[18] "tBodyAccMag mean"                  
+[19] "tGravityAccMag mean"               
+[20] "tBodyAccJerkMag mean"              
+[21] "tBodyGyroMag mean"                 
+[22] "tBodyGyroJerkMag mean"             
+[23] "fBodyAcc mean X"                   
+[24] "fBodyAcc mean Y"                   
+[25] "fBodyAcc mean Z"                   
+[26] "fBodyAcc meanFreq X"               
+[27] "fBodyAcc meanFreq Y"               
+[28] "fBodyAcc meanFreq Z"               
+[29] "fBodyAccJerk mean X"               
+[30] "fBodyAccJerk mean Y"               
+[31] "fBodyAccJerk mean Z"               
+[32] "fBodyAccJerk meanFreq X"           
+[33] "fBodyAccJerk meanFreq Y"           
+[34] "fBodyAccJerk meanFreq Z"           
+[35] "fBodyGyro mean X"                  
+[36] "fBodyGyro mean Y"                  
+[37] "fBodyGyro mean Z"                  
+[38] "fBodyGyro meanFreq X"              
+[39] "fBodyGyro meanFreq Y"              
+[40] "fBodyGyro meanFreq Z"              
+[41] "fBodyAccMag mean"                  
+[42] "fBodyAccMag meanFreq"              
+[43] "fBodyBodyAccJerkMag mean"          
+[44] "fBodyBodyAccJerkMag meanFreq"      
+[45] "fBodyBodyGyroMag mean"             
+[46] "fBodyBodyGyroMag meanFreq"         
+[47] "fBodyBodyGyroJerkMag mean"         
+[48] "fBodyBodyGyroJerkMag meanFreq"     
+[49] "angletBodyAccMean gravity"         
+[50] "angletBodyAccJerkMean gravityMean" 
+[51] "angletBodyGyroMean gravityMean"    
+[52] "angletBodyGyroJerkMean gravityMean"
+[53] "angleX gravityMean"                
+[54] "angleY gravityMean"                
+[55] "angleZ gravityMean"                
+[56] "tBodyAcc std X"                    
+[57] "tBodyAcc std Y"                    
+[58] "tBodyAcc std Z"                    
+[59] "tGravityAcc std X"                 
+[60] "tGravityAcc std Y"                 
+[61] "tGravityAcc std Z"                 
+[62] "tBodyAccJerk std X"                
+[63] "tBodyAccJerk std Y"                
+[64] "tBodyAccJerk std Z"                
+[65] "tBodyGyro std X"                   
+[66] "tBodyGyro std Y"                   
+[67] "tBodyGyro std Z"                   
+[68] "tBodyGyroJerk std X"               
+[69] "tBodyGyroJerk std Y"               
+[70] "tBodyGyroJerk std Z"               
+[71] "tBodyAccMag std"                   
+[72] "tGravityAccMag std"                
+[73] "tBodyAccJerkMag std"               
+[74] "tBodyGyroMag std"                  
+[75] "tBodyGyroJerkMag std"              
+[76] "fBodyAcc std X"                    
+[77] "fBodyAcc std Y"                    
+[78] "fBodyAcc std Z"                    
+[79] "fBodyAccJerk std X"                
+[80] "fBodyAccJerk std Y"                
+[81] "fBodyAccJerk std Z"                
+[82] "fBodyGyro std X"                   
+[83] "fBodyGyro std Y"                   
+[84] "fBodyGyro std Z"                   
+[85] "fBodyAccMag std"                   
+[86] "fBodyBodyAccJerkMag std"           
+[87] "fBodyBodyGyroMag std"              
+[88] "fBodyBodyGyroJerkMag std"    
